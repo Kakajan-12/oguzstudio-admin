@@ -3,6 +3,7 @@
 import { useEffect, useSyncExternalStore, type ReactNode } from "react";
 import {
   AppstoreOutlined,
+  CameraOutlined,
   ExportOutlined,
   GlobalOutlined,
   HomeOutlined,
@@ -79,6 +80,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
         { key: "/projects", icon: <PictureOutlined />, label: link("/projects", "Проекты") },
         { key: "/team", icon: <TeamOutlined />, label: link("/team", "Команда") },
         { key: "/brands", icon: <TrophyOutlined />, label: link("/brands", "Бренды") },
+        { key: "/gallery", icon: <CameraOutlined />, label: link("/gallery", "Галерея") },
         { key: "/positions", icon: <SolutionOutlined />, label: link("/positions", "Вакансии") },
         { key: "/countries", icon: <GlobalOutlined />, label: link("/countries", "Страны") },
       ],
