@@ -4,7 +4,6 @@ import { useEffect, useSyncExternalStore, type ReactNode } from "react";
 import {
   AppstoreOutlined,
   ExportOutlined,
-  FileTextOutlined,
   GlobalOutlined,
   HomeOutlined,
   LogoutOutlined,
@@ -76,7 +75,6 @@ export function AdminShell({ children }: { children: ReactNode }) {
       type: "group",
       label: "Контент сайта",
       children: [
-        { key: "/pages", icon: <FileTextOutlined />, label: link("/pages", "Тексты страниц") },
         { key: "/services", icon: <AppstoreOutlined />, label: link("/services", "Услуги") },
         { key: "/projects", icon: <PictureOutlined />, label: link("/projects", "Проекты") },
         { key: "/team", icon: <TeamOutlined />, label: link("/team", "Команда") },

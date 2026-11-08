@@ -2,7 +2,6 @@
 
 import {
   AppstoreOutlined,
-  FileTextOutlined,
   MailOutlined,
   PictureOutlined,
   SolutionOutlined,
@@ -21,7 +20,6 @@ const useCount = (resource: string) =>
   }).data?.count;
 
 const SHORTCUTS = [
-  { href: "/pages", icon: <FileTextOutlined />, title: "Тексты страниц", text: "Заголовки, абзацы и картинки на всех страницах" },
   { href: "/projects", icon: <PictureOutlined />, title: "Проекты", text: "Добавить работу в портфолио или на главную" },
   { href: "/services", icon: <AppstoreOutlined />, title: "Услуги", text: "Услуги и категории проектов" },
   { href: "/positions", icon: <SolutionOutlined />, title: "Вакансии", text: "Открыть или закрыть вакансию" },

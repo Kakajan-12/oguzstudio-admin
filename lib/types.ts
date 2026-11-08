@@ -104,18 +104,6 @@ export type Application = {
   createdAt: string;
 };
 
-export type FieldType = "text" | "textarea" | "image";
-
-export type PageSection = {
-  key: string;
-  title: string;
-  fields: { name: string; label: string; type: FieldType }[];
-  data: Record<string, Localized | string>;
-  updatedAt: string | null;
-};
-
-export type SitePage = { key: string; title: string; sections: PageSection[] };
-
 export type Settings = {
   contacts: {
     phone: string;

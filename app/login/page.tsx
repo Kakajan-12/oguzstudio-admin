@@ -33,7 +33,7 @@ export default function LoginPage() {
         <Typography.Title level={4} style={{ marginTop: 0 }}>
           Вход в панель управления
         </Typography.Title>
-        <Typography.Paragraph type="secondary">Тексты, проекты, вакансии и заявки сайта</Typography.Paragraph>
+        <Typography.Paragraph type="secondary">Проекты, вакансии и заявки сайта</Typography.Paragraph>
         {error && <Alert type="error" title={error} style={{ marginBottom: 16 }} showIcon />}
         <Form layout="vertical" onFinish={onFinish} requiredMark={false}>
           <Form.Item name="email" label="Email" rules={[{ required: true, message: "Введите email" }]}>
