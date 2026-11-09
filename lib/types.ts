@@ -106,13 +106,12 @@ export type Application = {
 
 export type Settings = {
   contacts: {
-    phone: string;
-    email: string;
+    phones: string[];
+    emails: string[];
     address: Localized;
     googleMapsUrl: string;
     mapCoordinates: string;
-    instagram: string;
-    tiktok: string;
+    socials: { network: string; url: string }[];
   };
   notifications: { emails: string[] };
 };
