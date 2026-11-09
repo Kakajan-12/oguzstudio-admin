@@ -5,6 +5,7 @@ import {
   AppstoreOutlined,
   CameraOutlined,
   ExportOutlined,
+  FileProtectOutlined,
   GlobalOutlined,
   HomeOutlined,
   LogoutOutlined,
@@ -83,6 +84,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
         { key: "/gallery", icon: <CameraOutlined />, label: link("/gallery", "Галерея") },
         { key: "/positions", icon: <SolutionOutlined />, label: link("/positions", "Вакансии") },
         { key: "/countries", icon: <GlobalOutlined />, label: link("/countries", "Страны") },
+        { key: "/legal", icon: <FileProtectOutlined />, label: link("/legal", "Документы") },
       ],
     },
     {
